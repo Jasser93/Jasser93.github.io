@@ -1,0 +1,88 @@
+
+h1 { color: red; 
+     font-family: Georgia, Trebuchet, serif;
+	 font-size: 2vw;
+     font-weight: bold;
+     font-style: italic;
+
+   }
+
+h2 { color: green; 
+	 font-family: Garamond, "Times New Roman", serif;
+	 font-weight: 400;
+
+   }
+ 
+ul li {
+	 color: DarkBlue; 
+	 font-family: Arial, "Times New Roman", serif;
+   }
+
+ol li {
+	 color: RebeccaPurple; 
+	 font-family: Verdana, "Times New Roman", serif;
+   }
+
+#mood { 
+     color: Maroon; 
+	 font-weight: bold;
+     font-style: italic;
+   }
+
+body {
+	background-color: Gainsboro;
+	}
+
+
+#intro::first-letter {
+  font-size: 1.5em;
+  border: 1px solid black;
+  background: yellow;
+  display: block;
+  float: left;
+  padding: 2px;
+  margin-right: 4px;
+}
+#intro:hover {color: blue}
+
+
+
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+dl dt { 
+     color: Maroon; 
+
+   }
+dd{ 
+     color: black; 
+	 font-style: italic;
+
+   }
+
+
+
+
+
+
+
+
+
+
