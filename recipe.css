@@ -1,0 +1,74 @@
+
+
+h1 { text-align: center;
+	 color: #A4A400 ;
+	 background-color: #F0F0F0;
+	 font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	 font-weight: bold;
+	 font-size: 22pt;
+	 text-decoration: underline;
+    }
+
+h2 {
+	 color: #A4A400 ;
+	 background-color: #F0F0F0;
+	 font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	 font-weight: normal;
+	 font-size: 18pt;
+	 text-decoration: underline;
+    }
+
+body {
+	background-color: white;
+	font-family: Georgia, Garamond, serif;
+	color: #404040;
+	font-size: 11pt;
+	
+	background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+    background-repeat: repeat-xy;
+	background-attachment: fixed;
+
+
+	}
+
+p  {
+     color: #404040;
+	 font-size: 11pt;
+	 
+   }
+p.quote  {
+     color: #404040;
+	 font-size: 11pt;
+	 background-color: #FFFFA8 ;
+	 margin-left: 80px;
+	 margin-right: 80px;
+   }
+
+a {
+	color: #A4A400  
+
+}
+
+abbr {
+	text-decoration: underline;
+}
+
+
+
+pre {
+	font-family: monospace;
+}
+
+
+q {
+    font-style: italic;
+	
+}
+
+
+
+
+
+
+
+
