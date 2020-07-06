@@ -3,7 +3,7 @@
 body {
 	font-family: Verdana, Tahoma, sans-serif;
 	font-size: 8pt;	
-	background-image: url("Movie Review_files/background.png");
+	background-image: url("Movie_Review_files/background.png");
 	margin: 0px;
     padding: 0px;
 }
@@ -17,7 +17,7 @@ body {
 
 #behindBanner{
 	position: absolute;
-	background-image: url("Movie Review_files/bannerbg.png");
+	background-image: url("Movie_Review_files/bannerbg.png");
     left: 0px;
     top: 0px;
     z-index: -1;
@@ -84,7 +84,7 @@ ul {
 }
 
 #topLeftDivision {
-	background-image: url("Movie Review_files/rbg.png");
+	background-image: url("Movie_Review_files/rbg.png");
 	background-repeat: repeat;
 	height: 83px;
 	
