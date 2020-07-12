@@ -1,0 +1,132 @@
+
+
+@media screen and (min-width:600px) {
+	
+	.item1 { grid-area: header; 
+			 background-color: lightblue;
+			 text-align: center;
+			 padding: 7px;
+			 margin: 0px;
+			 font-size: 2em;
+			 font-weight: bold;
+	}
+	.item2 { grid-area: menu;
+			 background-color: black;
+			 display: grid;
+			 grid-template-columns: 60px 60px 60px auto;
+			 border: 1px solid black;
+			 color: white;
+			 grid-gap: 2px;
+			 margin: 0px
+	}
+
+	.item2 > div { 
+			 background-color: darkgreen;
+			 text-align: center;
+			 color: white;
+			 padding: 6px;
+			
+	}
+	.item3 { grid-area: col1; 
+			 background-color: darkgray;
+			 padding: 1%;
+	}
+	.item4 { grid-area: col2;
+			 background-color: silver;
+			 padding: 1%;
+	}
+	.item5 { grid-area: col3; 
+			 background-color: lightgray;
+			 padding: 1%;
+	}
+	.item6 { grid-area: footer; 
+			 background-color: darkgreen;
+			 text-align: center;
+			 padding: 10px;
+			 color: white;
+			 margin: 0px;
+			 font-size: 1.17em;
+			 font-weight: bold;
+	}
+
+	.grid-container {
+	  display: grid;
+	  grid-template-areas:
+		'header header header header'
+		'menu menu menu menu'
+		'col1 col2 col2 col3'
+		'footer footer footer footer';
+	  grid-template-rows: 60px 40px 250px 45px;
+
+	}
+}
+
+
+
+
+@media screen and (max-width:599px) {
+
+	.item1 { grid-area: header; 
+			 background-color: lightblue;
+			 text-align: center;
+			 padding: 7px;
+			 margin: 0px;
+			 font-size: 2em;
+			 font-weight: bold;
+	}
+	.item2 { grid-area: menu;
+			 background-color: black;
+			 display: grid;
+			 grid-template-columns: 60px 60px 60px auto;
+			 border: 1px solid black;
+			 color: white;
+			 grid-gap: 2px;
+			 margin: 0px
+	}
+
+	.item2 > div { 
+			 background-color: darkgreen;
+			 text-align: center;
+			 color: white;
+			 padding: 6px;
+			
+	}
+	.item3 { grid-area: col1; 
+			 background-color: darkgray;
+			 padding: 1%;
+	}
+	.item4 { grid-area: col2;
+			 background-color: silver;
+			 padding: 1%;
+	}
+	.item5 { grid-area: col3; 
+			 background-color: lightgray;
+			 padding: 1%;
+	}
+	.item6 { grid-area: footer; 
+			 background-color: darkgreen;
+			 text-align: center;
+			 padding: 10px;
+			 color: white;
+			 margin: 0px;
+			 font-size: 1.17em;
+			 font-weight: bold;
+	}
+
+	.grid-container {
+	  display: grid;
+	  grid-template-areas:
+		'header header header header'
+		'menu menu menu menu'
+		'col1 col1 col3 col3'
+		'col2 col2 col2 col2'
+		'footer footer footer footer';
+	  grid-template-rows: 60px 40px 250px 250px 45px;
+
+	}
+
+
+	
+}
+
+
