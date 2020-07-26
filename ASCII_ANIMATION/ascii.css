@@ -24,9 +24,7 @@ Assignment: Lesson 7: (Objects, Modules, Inheritance) ASCII Animation */
 legend {
    text-align: center;
 }
-article{
-    alignment-adjust: central;
-}
+
 button{
     width: 47%;
 	background-color:#CCCCFF;
