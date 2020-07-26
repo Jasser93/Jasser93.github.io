@@ -1,0 +1,120 @@
+<!--Student: Jasser Dhaouadi Student ID: 610099-->
+<!--Lab 7: JavaScript Remplementing some exercises from Lab5 using map,reduce,filter -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Lab 07"/>
+		<meta name="author" content="Jasser Dhaouadi"/>
+		<title>JavaScript Map,Reduce,Filter </title>
+		<link href="../image/icon.jpg" type="image/jpg" rel="shortcut icon"/>
+		
+	</head>
+	
+	<body>
+		<h1> Using Arrays methods: map, reduce, filter </h1>
+		
+		<p>Click the button to check sum([1,2,3,4])</p>
+		<button onclick="myFunctionsum()">Try it</button>
+
+		<p>Click the button to check multiply([1,2,3,4])</p>
+
+		<button onclick="myFunctionmultiply()">Try it</button>
+
+		<p>Click the button to check reverse('abc')</p>
+
+		<button onclick="myFunctionreverse()">Try it</button>
+
+		<p>Click the button to check filterLongWords(['abc','abcde','ab'],2)</p>
+
+		<button onclick="myFunctionfilterLongWords()">Try it</button>
+		<script>
+			function sum(arr){
+				let sum = 0; 
+				sum = arr.reduce(function(prevVal, elem, i, array){
+									return prevVal + elem;
+							  }); 
+				return sum;
+			}
+  
+			function multiply(arr){
+				let result; 
+				result = arr.reduce(function(prevVal, elem, i, array){
+									return prevVal * elem;
+							  }); 
+				return result;
+
+			}
+			  
+			function reverse(arr){
+				let result; 
+				result = arr.reduce(function(prevVal, elem, i, array){
+									return elem + prevVal;
+							  }); 
+				return result;
+
+			}
+			  
+			function filterLongWords(arr, size) {
+				let result;
+				result = arr.filter(function(elem, i, array){
+										return elem.length > size;
+							  });
+				return result;
+			}
+			// -----------------------------------------------------------------
+			//         Tool for testing (same as lab5) 
+			// -----------------------------------------------------------------
+			function myFunctionTest(test,result){
+
+				let x = result();
+
+				if(typeof(x) == "object"){
+
+					let counter = 0; 
+					for (let i = 0; i < x.length; i++) {
+						if(x[i] == test[i]){
+							counter +=1;
+						}
+					}
+					if (counter == x.length && counter == test.length){
+						return "TEST SUCCEEDED";
+					}else{
+						return "TEST FAILED";
+					}
+				}
+
+
+				if (test == result()){
+					return "TEST SUCCEEDED";
+				}else{
+					return "TEST FAILED";
+				} 
+				
+			}
+			// -----------------------------------------------------------------
+			//                                TESTING 
+			// -----------------------------------------------------------------
+			
+			function myFunctionsum() {
+				alert("Expected output of sum([1,2,3,4]) is 10 and  " + myFunctionTest(10, function(){return sum([1,2,3,4]);} ));
+			}
+
+			function myFunctionmultiply() {
+				alert("Expected output of multiply([1,2,3,4]) is 24 and  " + myFunctionTest(24, function(){return multiply([1,2,3,4]);} ));
+			}
+
+			function myFunctionreverse() {
+				alert("Expected output of reverse('abc') is cba and  " + myFunctionTest("cba", function(){return reverse("abc".split(''));} ));
+			}
+			
+			function myFunctionfilterLongWords() {
+				alert("Expected output of filterLongWords(['abc','abcde','ab'],2) is ['abc', 'abcde'] and  " + myFunctionTest(["abc", "abcde"], function(){return filterLongWords(["abc","abcde","ab"],2);} ));
+			}
+	
+		</script>
+	
+	
+	</body>
+</html>
