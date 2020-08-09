@@ -34,7 +34,6 @@ function modify(){
 	  let newCircle = $("<div>");
 	  $('#CirclesContainer').append(newCircle);
 	  $('#CirclesContainer div').addClass("circle");
-	  //$('#CirclesContainer div').addClass("additionalCircles");
 	  $('.circle')[i].style.width = newWidth;
 	  $('.circle')[i].style.height = newWidth;
 	  $('.circle')[i].onclick = remove;
